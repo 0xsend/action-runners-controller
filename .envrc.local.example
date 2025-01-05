@@ -1,0 +1,4 @@
+# shellcheck shell=bash
+export KUBECONFIG="/etc/rancher/k3s/k3s.yaml"
+export INSTALLATION_NAME="arc-runner-set"
+export NAMESPACE="arc-runners"
