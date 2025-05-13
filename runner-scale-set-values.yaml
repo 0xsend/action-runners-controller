@@ -183,3 +183,5 @@ template:
         emptyDir: {}
       - name: dind-externals
         emptyDir: {}
+    imagePullSecrets:
+      - name: ghcr-login-secret
