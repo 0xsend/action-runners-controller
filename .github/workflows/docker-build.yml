@@ -2,8 +2,8 @@ name: Docker Build and Push
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # Run every 12 hours
-  workflow_dispatch:  # Allow manual trigger
+    - cron: "0 */12 * * *" # Run every 12 hours
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build-and-push:
@@ -42,5 +42,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
