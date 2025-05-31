@@ -57,4 +57,7 @@ RUN /home/linuxbrew/.linuxbrew/bin/brew install \
     direnv \
     temporal
 
+# Install playwright dependencies
+RUN npx playwright install --with-deps > /dev/null
+
 ENV PATH="$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin"
