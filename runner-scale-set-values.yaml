@@ -146,11 +146,11 @@ template:
             mountPath: /var/run
         resources:
           limits:
-            cpu: "4000m"
-            memory: "16Gi"
+            cpu: "6000m"
+            memory: "32Gi"
           requests:
-            cpu: "4000m"
-            memory: "12Gi"
+            cpu: "6000m"
+            memory: "24Gi"
       - name: dind
         image: docker:dind
         args:
@@ -171,11 +171,11 @@ template:
             mountPath: /home/runner/externals
         resources:
           limits:
-            cpu: "4000m"
-            memory: "16Gi"
+            cpu: "6000m"
+            memory: "32Gi"
           requests:
-            cpu: "4000m"
-            memory: "12Gi"
+            cpu: "6000m"
+            memory: "24Gi"
     volumes:
       - name: work
         emptyDir: {}
