@@ -58,6 +58,6 @@ RUN /home/linuxbrew/.linuxbrew/bin/brew install \
     temporal
 
 # Install playwright dependencies
-RUN npx playwright install --with-deps > /dev/null
+RUN npm install @playwright/test && npx playwright install --with-deps
 
 ENV PATH="$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin"
